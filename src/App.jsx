@@ -27,7 +27,7 @@ function App() {
   const {loading, error ,data} =useQuery(FetchingData);
   return (
     <>
-    <h1 className='heading'>State Handling</h1>
+    <h1 className='heading'>State Handling dialog using Radix </h1>
       <div>
         {loading?<Loader/>:
         data && data.messages.items.map(msg=>
